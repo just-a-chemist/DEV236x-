@@ -1,5 +1,6 @@
-# [ ] create check_guess()
-# call with test
+
+import random
+randomletter = random.choice("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")
 def check_gess(letter,guess):
     if guess.isalpha():
         pass
@@ -22,6 +23,10 @@ def check_gess(letter,guess):
         print("too high")
     elif letter > guess:
         print("Too low")
+    print(randomletter)
     return
 
-check_gess("l",input("letter?"))
+check_gess(randomletter,input("enter a letter?"))
+
+
+

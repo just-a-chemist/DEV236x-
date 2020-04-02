@@ -1,0 +1,10 @@
+def preword(word):
+    wordL = word.lower()
+    if wordL.isalpha() and wordL.startswith("Pre".lower()):
+         print("the word starts with pre and contains only alphabetical characters")
+    else: print("The word does not start with pre and/or contains alphabetical characters")
+    
+preword(input("Enter a word. "))
+    
+
+    

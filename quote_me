@@ -1,0 +1,8 @@
+def quote_me(text):
+    if text.startswith("\'"):
+        print('\"'+text+'\"')
+    elif text.startswith("\""):
+        print('\''+text+'\'')
+    else: print('\''+text+'\'')
+        
+quote_me(input("Insert a quote. "))

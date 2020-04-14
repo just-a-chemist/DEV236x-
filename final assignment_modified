@@ -1,0 +1,22 @@
+def adding_report(mode):
+    total = 0
+    list_of = ""
+    while True:
+        usr_input = input("Input a digit or press \'Q\' to quit. ")
+        if usr_input.isdigit():
+            list_of +=usr_input + "\n" 
+            total += int(usr_input)
+        elif usr_input.upper().startswith("Q"):
+            break
+    while True:
+        if mode == "A":
+            print("The total score is: "+str(total)+"\nThe individual scores are as follows:\n"+list_of)
+            break
+        elif mode == "T":
+            print("The total score is: "+str(total))
+            break
+        else: mode = input("You did not enter A or T. Please try again. ").upper()
+        
+
+
+adding_report(input("Type of report required. A for all data, T for total only.").upper())
